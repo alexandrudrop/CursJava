@@ -16,7 +16,12 @@ public class TestRectangle {
 		System.out.println(obiect2.calculArie(obiect2.lungime, obiect2.latime));
 	*/	
 		Rectangle obiect3 = new Rectangle(8, 12);
-		System.out.println(obiect3.calculArie());
+		System.out.println(obiect3.calculArie() + obiect3.afiseazaCuloareDreptunghi());
+		
+		Rectangle obiect4 = new Rectangle (9, 7);
+		System.out.println (obiect4.afiseazaCuloareDreptunghi());
+		
+		
 
 	}
 

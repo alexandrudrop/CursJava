@@ -7,15 +7,14 @@ public class Rectangle {
 	int inaltime;
     String culoare = "ALB";
 	
-	public void afiseazaCuloareDreptunghi (String[] args) {
-		System.out.println(culoare);
+	public String afiseazaCuloareDreptunghi () {
+		return culoare;
 	}
 	
-	public Rectangle (int lungime, int latime, String[] args) {
+	public Rectangle (int lungime, int latime, String culoare) {
 		this.lungime = lungime;
 		this.latime = latime;
-		String culoare = "ALB";
-		this.culoare = culoare;
+        this.culoare = culoare;
 		
 		
 	}
@@ -33,13 +32,12 @@ public class Rectangle {
 
 	
 	//constructor default
-	/*public Rectangle() {}
+	public Rectangle() {}
 	
 	public Rectangle(int lungime, int latime) {
 		this.lungime = lungime;
 		this.latime = latime;
 	}
-*/
 
 
 }

@@ -30,7 +30,7 @@ public class CalculeazaImpozitVenit {
 			suma = (valoareVenit <= 50000) ? suma + valoareVenit * 0.1 : suma + valoareVenit * 0.15;
 			System.out.println("Suma " + suma);
 		}
-		
+		scan.close();
 		System.out.println("Impozit de plata : " + suma);
 
 	}

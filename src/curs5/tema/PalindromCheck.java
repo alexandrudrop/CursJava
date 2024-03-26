@@ -17,8 +17,10 @@ public class PalindromCheck {
         
 		System.out.println(estePalindrom ? "Textul este palindrom." : "Textul nu este palindrom.");
     }
+	
+	    
 
-    public static boolean checkPalindrom(String text) {
+/*    public static boolean checkPalindrom(String text) {
         
     	String afisez = "";
         for (int i = 0; i < afisez.length() / 2; i++) {
@@ -28,5 +30,23 @@ public class PalindromCheck {
         }
         return true;
         
-    }
+    }*/
+	
+	
+    public static boolean checkPalindrom(String text) {
+
+        
+
+        for (int i = 0; i < text.length() / 2; i++) {
+
+          if (text.charAt(i) != text.charAt(text.length() - i - 1)) {
+
+              return false;
+
+          }
+
+        }
+
+      return true;
+      }
  }

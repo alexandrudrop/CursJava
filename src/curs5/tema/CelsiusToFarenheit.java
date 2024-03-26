@@ -15,7 +15,7 @@ public class CelsiusToFarenheit {
 
         
         for (int i = 1; i <= numTemperaturi; i++) {
-            System.out.print("Introduceti temperatura " + i + " in Celsius (°C): ");
+            System.out.print("\nIntroduceti temperatura " + i + " in Celsius (°C): ");
             double celsius = scan.nextDouble();
 
             

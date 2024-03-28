@@ -42,10 +42,8 @@ public class PalindromCheck {
           if (text.charAt(i) != text.charAt(text.length() - i - 1)) {
 
               return false;
-
+              }
           }
-
-        }
 
       return true;
       }

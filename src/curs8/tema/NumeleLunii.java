@@ -28,7 +28,9 @@ public class NumeleLunii {
                     System.out.println("Valoare invalida. Va rog introduceti un numar intre 1 si 12.");
                 }
                 scan.nextLine();
-                scan.close();
+         scan.close();
          }
+        
      }
+    
 }

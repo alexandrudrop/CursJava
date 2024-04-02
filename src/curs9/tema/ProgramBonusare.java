@@ -41,6 +41,8 @@ public class ProgramBonusare {
                     bonus = 1200;
                 } 
                 break;
+            default:
+				System.out.println("Vechime invalida!");
         }
 
         System.out.println("Valoarea bonusului: " + bonus);

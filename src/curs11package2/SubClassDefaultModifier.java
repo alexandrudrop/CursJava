@@ -1,5 +1,3 @@
 package curs11package2;
 
-public class SubClassDefaultModifier {
-
-}
+//public class SubClassDefaultModifier extends DefaultAccesModifier {}

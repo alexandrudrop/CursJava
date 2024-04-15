@@ -11,7 +11,7 @@ abstract class Account {
         this.accountOwner = accountOwner;
     }
 
-    public abstract void withdraw(double amount) throws InsufficientFundsException;
+    public abstract void withdraw(double amount) throws InsufficientFundsException, InvalidNumberException;
 
 	public int getAccountNumber() {
 		return accountNumber;

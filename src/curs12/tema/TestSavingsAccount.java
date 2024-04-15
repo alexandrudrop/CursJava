@@ -24,6 +24,8 @@ public class TestSavingsAccount {
         } catch (InsufficientFundsException e) {
             System.out.println("The amount you entered is greater than the available balance: " + savingsAccount.balance);
             e.printStackTrace();
+        }catch(InvalidNumberException e) {
+    		System.out.println("You have entered an invalid number!");
         } finally {
             System.out.println("Thank you for using our ATM!");
         }

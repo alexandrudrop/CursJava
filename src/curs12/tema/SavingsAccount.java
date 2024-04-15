@@ -6,10 +6,13 @@ class SavingsAccount extends Account {
     }
 
     @Override
-    public void withdraw(double amount) throws InsufficientFundsException {
+    public void withdraw(double amount) throws InsufficientFundsException, InvalidNumberException{
         if (amount > balance) {
             throw new InsufficientFundsException();
         }
-        balance -= amount;
+        if (amount < 1) {
+        	throw new InvalidNumberException();
+        }
+        balance -= amount;   
     }
 }

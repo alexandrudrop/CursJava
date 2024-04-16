@@ -9,17 +9,17 @@ public class Catalog {
         Map<String, Integer> catalog = new HashMap<>();
 
         
-        catalog.put("Alina", 9);
-        catalog.put("Bogdan", 8);
-        catalog.put("Costin", 7);
-        catalog.put("Dumitru", 9);
-        catalog.put("Eva", 8);
-        catalog.put("Florin", 9);
+        catalog.put("ALINA", 9);
+        catalog.put("BOGDAN", 8);
+        catalog.put("COSTIN", 7);
+        catalog.put("DUMITRU", 9);
+        catalog.put("EVA", 8);
+        catalog.put("FLORIN", 9);
 
         
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter student name: ");
-        String studentName = scan.nextLine();
+        String studentName = scan.next().toUpperCase();
         System.out.print("Enter student grade: ");
         int studentGrade = scan.nextInt();
         scan.close();

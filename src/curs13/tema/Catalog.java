@@ -32,7 +32,7 @@ public class Catalog {
         
         if (catalog.containsKey(studentName)) {
             int existingGrade = catalog.get(studentName);
-            if (studentGrade < existingGrade) {
+            if (studentGrade <= existingGrade) {
                 System.out.println("Nu ai nevoie de alta nota");
             } else {
             	catalog.put(studentName, studentGrade);

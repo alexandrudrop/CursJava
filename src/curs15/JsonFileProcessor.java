@@ -70,11 +70,56 @@ public class JsonFileProcessor {
 			System.out.println(timestamp);
 			String user =  (String) timestamp.get("user");
 			System.out.println(user);
+			System.out.println("------------------------------");
+			JSONObject jsonObject2 = (JSONObject) obiectPrimar.get(1);
+			System.out.println(jsonObject2);
+			JSONObject timestamp2 = (JSONObject) jsonObject2.get("timestamp2");
+			System.out.println(timestamp2);
+			timestamp2.remove("user2");
+			
+			try(FileWriter writer =  new FileWriter("data.json")){
+				writer.write(jsonObject2.toJSONString());
+			}
 			
 		}catch(Exception e) {
 			System.out.println("NU am putut citi fisierul");
 		}
 	}
+	
+	@SuppressWarnings("unchecked")
+	public void updateJsonFile(String key, String value) {
+		
+		try(FileReader reader = new FileReader("test.json")){
+			JSONParser parser =  new JSONParser();
+			JSONObject jsonObj =  (JSONObject) parser.parse(reader);
+			
+			jsonObj.put(key, value);
+			
+			try(FileWriter writer =  new FileWriter("test.json")){
+				writer.write(jsonObj.toJSONString());
+			}
+			
+		}catch(Exception e) {
+			System.out.println("A aparut o eroare");
+		}	
+	}
+	
+	public void deleteFromJsonFile(String key) {
+		try(FileReader reader = new FileReader("test.json")){
+			JSONParser parser =  new JSONParser();
+			JSONObject jsonObj =  (JSONObject) parser.parse(reader);
+			
+			jsonObj.remove(key);
+			
+			try(FileWriter writer =  new FileWriter("test.json")){
+				writer.write(jsonObj.toJSONString());
+			}
+			
+		}catch(Exception e) {
+			System.out.println("A aparut o eroare");
+		}	
+	}
+	
 	
 	
 }

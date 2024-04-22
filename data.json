@@ -1,14 +1,11 @@
 [
- {
- 	"timestamp" : {
- 		"user" : "actiune",
- 		"user1" : "actiune",
- 		"user2" : "actiune"			
- 	  }
- },
- {
- 	"timestamp2" : {
- 		"user2" : "actiune2"		
- 	  }
- }
+{"timestamp":{ 
+	"user1":"actiune",
+	"user2":"actiune",
+	"user":"actiune"}
+	},
+ {"timestamp2":{
+ 	"user2":"actiune2"
+ 	}
+ 	}
 ]

@@ -14,7 +14,23 @@ public class transformToString {
 		System.out.println(chStr2.getClass());
 		
 		
+		System.out.println("---------------------------------------------");
 		
+		
+		boolean flag = true;
+		
+		String flagStr = Boolean.toString(flag);
+		String flagStr2 = String.valueOf(flag);
+		
+		System.out.println(flagStr.getClass());
+		System.out.println(flagStr2.getClass());
+		
+		
+		System.out.println("---------------------------------------------");
+		
+		String str = null;
+		
+		//System.out.p
 
 	}
 

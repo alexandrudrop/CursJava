@@ -30,7 +30,8 @@ public class transformToString {
 		
 		String str = null;
 		
-		//System.out.p
+		//System.out.println(str.toString());
+		System.out.println(String.valueOf(str));
 
 	}
 
